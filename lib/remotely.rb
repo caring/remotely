@@ -37,6 +37,10 @@ module Remotely
     def initialize(body)
       @body = body
     end
+
+    def message
+      "#{MESSAGE}: #{@body}"
+    end
   end
 
   class << self
